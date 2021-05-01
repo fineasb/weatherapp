@@ -1,0 +1,1 @@
+I created a weather app in couple hours just to get comfy with javascript and css design in general.
