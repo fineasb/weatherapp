@@ -6,22 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/276bcc5851.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="app-wrap">
         <header>
-            <input type="text" placeholder="Search for a city...." autocomplete="off" class="search-box" />
+            <input type="text" placeholder="Search for location" autocomplete="off" class="search-box" />
+            <button onclick="search()" id="search"><i class="fas fa-search"></i></button>
+            <section class="the_switch">
+            <label class="switch">
+                <input onchange="boom()" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            </section>
         </header>
         <main>
-            <section class="location">
-                <div class="city">Northampton, GB</div>
-                <div class="date">Thursday 10 January 2020</div>
-            </section>
+                <section>
+                    <div class="city">Northampton, GB</div>
+                    <div class="date">Thursday 10 January 2020</div>
+                </section>
             <div class="current">
-                <div class="temp">75<span>°</span><span>F</span></div>
-                <div class="weather">Sunny</div>
-                <div class="hi-low">13°c / 16°c</div>
+                <section class="weather_hi_low">
+                    <div class="weather">Sunny</div>
+                    <div class="hi-low">13°c / 16°c</div>
+                </section>
+                <div class="temperature">
+                    <div class="temp">75<span>°</span><span>F</span></div>
+                </div>
             </div>
+                <div class="subsol">
+                    <h6>© FineasBerindei.com, Inc. All rights reserved. <a style="text-decoration: none;" href="https://www.linkedin.com/in/fineas-berindei-79b722142/">Linked in.</a></h6>
+                </div>
         </main>
     </div>
     <script src="main.js"></script>

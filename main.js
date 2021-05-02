@@ -19,18 +19,24 @@ function getResults(query) {
     }).then(displayResult);
 }
 
+function search() {
+    let search = document.querySelector('.search-box').value;
+    getResults(search);
+}
+
 function displayResult(weather) {
+    console.log(weather);
     let city = document.querySelector('.city');
     city.innerHTML = `${weather.name}, ${weather.sys.country}`;
     let now = new Date();
     let date = document.querySelector('.date');
     date.innerHTML = dateBuilder(now);
     let temp = document.querySelector('.temp');
-    temp.innerHTML = `${Math.round(weather.main.temp)}<span>°F</span>`;
+    temp.innerHTML = `${Math.round(weather.main.temp - 231)}<span>°F</span>`;
     let weat = document.querySelector('.weather');
     weat.innerHTML = `${weather.weather[0].main}`;
     let hilow = document.querySelector('.hi-low');
-    hilow.innerHTML = `${Math.round(weather.main.temp_min)}°F / ${Math.round(weather.main.temp_max)}°F`;
+    hilow.innerHTML = `${Math.round(weather.main.temp_min - 231)}°F / ${Math.round(weather.main.temp_max - 231)}°F`;
 }
 
     function dateBuilder(d) {
@@ -41,4 +47,8 @@ function displayResult(weather) {
         let month = months[d.getMonth()];
         let year = d.getFullYear();
         return `${day}, ${date}, ${month}, ${year}`;
+    }
+
+    function boom() {
+        alert('I am just an experienced web developer who looks for a new opportunity in tech.. So please give me a chance and hire me.');
     }
