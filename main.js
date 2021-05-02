@@ -50,5 +50,5 @@ function displayResult(weather) {
     }
 
     function boom() {
-        alert('I am just an experienced web developer who looks for a new opportunity in tech.. So please give me a chance and hire me.');
+        
     }
