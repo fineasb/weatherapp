@@ -9,6 +9,44 @@ body {
     background-color:linear-gradient(145deg, #cacaca, #f0f0f0);
 }
 
+@media only screen and (max-width: 768px) {
+    header input{
+         width: 100%;
+    }
+    #search i{
+        position: relative;
+        margin-left: -10px;
+    }
+    
+    .current {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .temp {
+        display: flex;
+        justify-content: center;
+        margin-top: -70px;
+    }
+    
+
+  }
+
+  @media only screen and (min-width: 768px) {
+
+    .temp{        
+         margin-left: -40px;
+    }
+    
+
+
+
+
+    
+  }
+
 .app-wrap{
     display: flex;
     flex-direction: column;
@@ -39,16 +77,6 @@ header input{
     padding-left: 20px;
     transition: 0.2s;
 }
-
-@media only screen and (max-width: 768px) {
-    header input{
-         width: 100%;
-    }
-    #search i{
-        position: relative;
-        margin-left: -10px;
-    } 
-  }
 
 header input:focus {
     transition: 0.2s;
@@ -108,7 +136,6 @@ main{
 
 .temp {
     z-index: 4;
-    margin-left: -40px;
     border-color:#00000083;
     border-style: solid;
     border-width: 1px;
