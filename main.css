@@ -43,7 +43,18 @@ header input{
 @media only screen and (max-width: 768px) {
     header input{
          width: 100%;
+         margin-right: 0px;
+         padding-right: 0px;
     }
+
+    .city{
+        background-color: greenyellow;
+    }
+
+    #search{
+        position: relative;
+        margin-left: -100px;
+    } 
   }
 
 header input:focus {
