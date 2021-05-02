@@ -217,16 +217,18 @@ main{
   }
 
   .subsol{
+      background-color: rgba(66, 66, 66, 0);
       display: flex;
       justify-content: center;
-      height: 100px;
-      margin-top: 230px;
       align-items: center;
       user-select: none;
+
+
+      position: fixed;
+      left: 0;
+      bottom: 10px;
+      width: 100%;
   }
-
-  .muie{}
-
 
 /* 
  .app-wrap {
