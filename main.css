@@ -176,7 +176,6 @@ main{
     background: linear-gradient(145deg, #cacaca, #f0f0f0);
     box-shadow:  34px 34px 68px #bababa,
              -34px -34px 68px #ffffff;
-    
 }
 
 .weather_hi_low:hover {
