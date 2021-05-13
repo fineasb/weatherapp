@@ -21,11 +21,11 @@ function getResults(query) {
 
 function search() {
     let search = document.querySelector('.search-box').value;
+    search = " ";
     getResults(search);
 }
 
 function displayResult(weather) {
-    console.log(weather);
     let city = document.querySelector('.city');
     city.innerHTML = `${weather.name}, ${weather.sys.country}`;
     let now = new Date();
@@ -47,8 +47,4 @@ function displayResult(weather) {
         let month = months[d.getMonth()];
         let year = d.getFullYear();
         return `${day}, ${date}, ${month}, ${year}`;
-    }
-
-    function boom() {
-        
     }
